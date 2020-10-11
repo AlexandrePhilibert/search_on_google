@@ -1,0 +1,19 @@
+{
+  "name": "search_on_google",
+  "version": "0.1.0",
+  "description": "Add a search on Google button to duckduckgo search results",
+  "main": "index.js",
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./",
+    "build": "web-ext build"
+  },
+  "keywords": [
+    "Duckduckgo",
+    "Google"
+  ],
+  "author": "Alexandre Philibert",
+  "license": "MIT",
+  "devDependencies": {
+    "web-ext": "^5.2.0"
+  }
+}
