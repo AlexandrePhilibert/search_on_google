@@ -1,13 +1,12 @@
 {
-    "manifest_version": 2,
-    "name": "Search on Google",
-    "version": "0.1",
-    "description": "Add a search on Google button to duckduckgo search results",
-    "content_scripts": [
-      {
-        "matches": ["*://duckduckgo.com/*"],
-        "js": ["index.js"]
-      }
-    ]
-  
-  }
+  "manifest_version": 2,
+  "name": "Search on Google",
+  "version": "0.1",
+  "description": "Add a search on Google button to duckduckgo search results",
+  "content_scripts": [
+    {
+      "matches": ["*://duckduckgo.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
