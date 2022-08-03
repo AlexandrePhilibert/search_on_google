@@ -5,7 +5,7 @@
   "description": "Add a search on Google button to duckduckgo search results",
   "content_scripts": [
     {
-      "matches": ["*://duckduckgo.com/*"],
+	  "matches": ["*://duckduckgo.com/*", "*://*.google.com/*"],
       "js": ["index.js"]
     }
   ]
