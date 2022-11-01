@@ -1,12 +1,21 @@
 {
   "manifest_version": 3,
+  "version": "0.1.0",
   "name": "Search on Google",
-  "version": "0.1",
   "description": "Add a search on Google button to duckduckgo search results",
+  "permissions": [
+      "storage"
+  ],
   "content_scripts": [
     {
 	  "matches": ["*://duckduckgo.com/*", "*://*.google.com/*"],
       "js": ["index.js"]
     }
-  ]
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "background": {
+      "service_worker": "background.js"
+  }
 }
